@@ -5,7 +5,10 @@ normal_move = ['R', 'U', 'L', 'B', 'D', 'F']
 negative_move = ["R'", "U'", "L'", "B'", "D'", "F'"]
 double_move = ['R2', 'U2', 'L2', 'B2', 'D2', 'F2']
 
-print("Do you want a scramble? (y/n)")
+red_text = "\033[91m"
+green_text = "\033[92m"
+end_color = "\033[0m"
+print("Do You Want A Scramble? (" + green_text + "Y" + end_color + "/" + red_text + "N" + end_color + ")")
 answer = input()
 
 if answer.lower() == "y":
@@ -20,12 +23,12 @@ if answer.lower() == "y":
         last_move = move
     
     scramble_str = " ".join(scramble)
-    print("Your Generated Scramble -> " + scramble_str)
+    print("The Generated Scramble -> " + scramble_str)
     
-    input("Press Enter To Start The Timer....")
+    input("Press Enter To " + green_text + "Start " + end_color + "The Timer....")
     start_time = time.time()
     
-    input("Press Enter To Stop The Timer....")
+    input("Press Enter To " + red_text + "Stop " + end_color + "The Timer....")
     elapsed_time = time.time() - start_time
     
     minutes = int(elapsed_time // 60)
