@@ -1,8 +1,27 @@
-# Python-Rubik-Scrambler
-A Python 3x3 Rubik's Cube Scrambler with a timer.
+# Python 3x3 Rubik's Cube Scrambler & Timer
 
-** It's fully customizable, so just change whatever you want. **
+* To start the scrambler run the command below :
 
-Run -> python3 rubikscram.py
+```
+python3 rubikscram.py
+```
 
-To start or stop the timer - just press enter. Results are printed after solving.
+* Press "enter" when you finish and the time will print.
+
+
+## Prerequisites
+
+You will need Python installed and the following modules.
+
+```
+$ pip install time
+$ pip install random
+```
+
+## Built With
+
+* [Python](https://www.python.org/) - Programming Language
+
+## Authors
+
+* [the-young-tech](https://github.com/the-young-tech) - Creator
